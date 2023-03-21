@@ -57,6 +57,7 @@ const WorkPage = () => {
           <PowerButton />
           <SocialIcons theme="dark" />
           <LogoComponents theme="dark" />
+<h1>Scroll down :)</h1>
           <Main ref={ref} variants={container} initial="hidden" animate="show">
             {Work.map((item) => {
               return (
