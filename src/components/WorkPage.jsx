@@ -25,6 +25,16 @@ const Main = styled(motion.ul)`
   left: calc(10rem + 15vw);
   display: flex;.
 `;
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.5,
+      duration: 0.5,
+    },
+  },
+};
 
 const WorkPage = () => {
   const ref = useRef(null);
