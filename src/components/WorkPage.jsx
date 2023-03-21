@@ -35,6 +35,13 @@ const container = {
     },
   },
 };
+const CenterText = styled.div`
+  color: white;
+  bottom: 0%;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
 
 const WorkPage = () => {
   const ref = useRef(null);
@@ -57,7 +64,9 @@ const WorkPage = () => {
           <PowerButton />
           <SocialIcons theme="dark" />
           <LogoComponents theme="dark" />
-<h1>Scroll down :)</h1>
+            <CenterText>
+<h1>Scroll down</h3>
+</CenterText>
           <Main ref={ref} variants={container} initial="hidden" animate="show">
             {Work.map((item) => {
               return (
